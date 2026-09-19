@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f7f5">
+    <meta name="description" content="Цифровой паспорт Шина">
+    <title>Шин — паспорт питомца</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="page">
+
+    <header class="topbar">
+        <div class="brand">PET / 01</div>
+        <div class="status"><span></span> домашний питомец</div>
+    </header>
+
+    <section class="hero">
+        <div class="photo-wrap">
+            <img src="assets/shin.png" alt="Шин — маисовая змея" class="pet-photo">
+        </div>
+
+        <div class="hero-copy">
+            <div class="eyebrow">DIGITAL PET PASSPORT</div>
+            <h1>Шин</h1>
+            <p class="subtitle">
+                Маисовая змея <em>Pantherophis guttatus</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Основная информация: теперь одним аккуратным списком -->
+    <section class="facts">
+
+        <div class="fact-row">
+            <span>Дата рождения</span>
+            <strong>24.04.2026</strong>
+        </div>
+
+        <div class="fact-row">
+            <span>Вид</span>
+            <strong>Pantherophis guttatus</strong>
+        </div>
+
+        <div class="fact-row">
+            <span>Морфа</span>
+            <strong>Amelanistic</strong>
+        </div>
+
+        <div class="fact-row">
+            <span>Рисунок</span>
+            <strong>Nominal / Wild Type</strong>
+        </div>
+
+        <div class="tags">
+            <span>Красно-оранжевый</span>
+            <span>Amelanistic</span>
+            <span>Nominal</span>
+        </div>
+
+    </section>
+
+    <!-- КОРМЛЕНИЕ -->
+    <section class="card feeding">
+
+        <div class="section-header">
+            <div>
+                <div class="eyebrow">01 / CARE</div>
+                <h2>Кормление</h2>
+            </div>
+
+            <div class="next-feed">
+                <span>следующее</span>
+                <strong id="nextFeed">—</strong>
+            </div>
+        </div>
+
+        <div class="calendar">
+
+            <div class="calendar-header">
+                <button id="previousMonth" aria-label="Предыдущий месяц">‹</button>
+                <h3 id="monthTitle">—</h3>
+                <button id="nextMonth" aria-label="Следующий месяц">›</button>
+            </div>
+
+            <div class="weekdays">
+                <span>ПН</span>
+                <span>ВТ</span>
+                <span>СР</span>
+                <span>ЧТ</span>
+                <span>ПТ</span>
+                <span>СБ</span>
+                <span>ВС</span>
+            </div>
+
+            <div id="calendar" class="calendar-grid"></div>
+
+            <div class="legend">
+                <div><i class="feeding-dot"></i> кормление</div>
+                <div><i class="today-dot"></i> сегодня</div>
+            </div>
+
+        </div>
+
+        <div class="feeding-note">
+            <div class="note-icon">↗</div>
+            <div>
+                <strong>График кормления</strong>
+                <p>Шин получает корм один раз в неделю.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="small-info">
+        <div>
+            <span>Возраст</span>
+            <strong id="age">—</strong>
+        </div>
+
+        <div>
+            <span>Статус</span>
+            <strong>Дома ♡</strong>
+        </div>
+    </section>
+
+    <footer>
+        <span>PRIVATE PET PASSPORT</span>
+        <span>SHIN / 2026</span>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
