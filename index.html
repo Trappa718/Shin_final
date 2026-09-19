@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Цифровой паспорт домашней змеи">
+  <title>Паспорт питомца — змея</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand-mark">PET / 01</div>
+      <div class="status"><span></span> домашний питомец</div>
+    </header>
+
+    <section class="hero">
+      <div class="photo-wrap">
+        <img src="assets/snake.jpg" alt="Фотография питомца" class="pet-photo">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">digital pet passport</p>
+        <h1>Имя питомца</h1>
+        <p class="subtitle">Маисовая змея <em>Pantherophis guttatus</em></p>
+      </div>
+    </section>
+
+    <section class="facts">
+      <article class="fact">
+        <span class="fact-label">Дата рождения</span>
+        <strong>24.04.2026</strong>
+      </article>
+      <article class="fact">
+        <span class="fact-label">Вид</span>
+        <strong>Pantherophis guttatus</strong>
+      </article>
+      <article class="fact">
+        <span class="fact-label">Морфа</span>
+        <strong>Amelanistic</strong>
+      </article>
+      <article class="fact">
+        <span class="fact-label">Рисунок</span>
+        <strong>Nominal / Wild Type</strong>
+      </article>
+    </section>
+
+    <section class="profile-card">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / profile</p>
+          <h2>О питомце</h2>
+        </div>
+        <div class="badge">AMEL</div>
+      </div>
+      <p class="description">
+        Светлая красно-оранжевая окраска без чёрного пигмента.
+        Классический рисунок спинных пятен с характерной светлой окантовкой.
+      </p>
+      <div class="tags">
+        <span>Красно-оранжевый</span>
+        <span>Amelanistic</span>
+        <span>Nominal</span>
+      </div>
+    </section>
+
+    <section class="feeding">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 / care</p>
+          <h2>Календарь кормления</h2>
+        </div>
+        <div class="next-feed">
+          <span>следующее</span>
+          <strong id="nextFeedLabel">—</strong>
+        </div>
+      </div>
+
+      <div class="calendar-card">
+        <div class="calendar-nav">
+          <button id="prevMonth" aria-label="Предыдущий месяц">‹</button>
+          <h3 id="monthTitle"></h3>
+          <button id="nextMonth" aria-label="Следующий месяц">›</button>
+        </div>
+        <div class="weekdays">
+          <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+        </div>
+        <div id="calendar" class="calendar-grid"></div>
+        <div class="legend">
+          <span><i class="dot feeding-dot"></i> кормление</span>
+          <span><i class="dot today-dot"></i> сегодня</span>
+        </div>
+      </div>
+
+      <div class="schedule-note">
+        <div class="note-icon">↗</div>
+        <div>
+          <strong>График легко изменить</strong>
+          <p>Даты кормления находятся в одном массиве в <code>script.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mini-info">
+      <div>
+        <span>Возраст</span>
+        <strong id="age">—</strong>
+      </div>
+      <div>
+        <span>Статус</span>
+        <strong>Дома ♡</strong>
+      </div>
+    </section>
+
+    <footer>
+      <span>PRIVATE PET PASSPORT</span>
+      <span>2026</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
